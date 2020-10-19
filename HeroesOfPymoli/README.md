@@ -1,95 +1,32 @@
 # pandas-challenge
- Homework 4 - Heroes of Pymoli (Pandas)
 
-	This Homework assignment was very frustrating. I am really struggling with pandas.
-	I found that even after spending hours looking through past activities, reviewing zoom videos of class sessions, and practicing google-fu
-	I couldn't really make progress on certain aspects of the assignment.
-	On top of all that I still don't really know how to make a good "detailed" readme.
-	What does a good readme look like when it's just for a homework assignment?
-	
-	What follows is a list of the sections of the homework assignment:
+Homework 4 - Heroes of Pymoli (Pandas)
 
-		Player Count: Finished
-		Purchasing Analysis(Total): Finished
-		Gender Demographics: Finished
-		Purchasing Analysis (Gender): Finished
-		Age Demographics: Finished (formatting problems)
-		Purchasing Analysis(Age): Unfinished
-		Top Spenders: Unfinished
-		Most Popular Items: Unfinished
-		Most Profitable Items: Unfinished
+	This Homework assignment was a real challenge. I am really struggling with pandas. The syntax of calling certain functions is confusing
+and I feel like my approach to resolving exceptions was flawed. That said, I do feel significantly more comfortable working with dataframes
+after completing the assignment. I understand the basics of forming them and pulling select pieces of data, but when I need to organize the data
+in more complex ways I still need to practice.
 
-(Examine Dataframe, drop duplicate transactions and return total number of individual players)
-Player Count
-	Total Number of Players
+	The biggest challenge for this assignment was understanding how groupby() objects work and which functions/attributes can be called
+when working with them. After figuring how to use .count/.sum/.mean on groupby objects most of the problems I was having were resolved. 
+I also struggled with formatting, but ultimately it was not as much of an issue as working using groupby. I just wish I had a better understanding of
+what the individual pieces of this phrase: map("${:,.2f}".format), really do. I think I understand the '$' and the '2f' but the ":,." doesn't mean
+very much to me right now, so that's one thing I would like to practice a bit more. I also ran into an issue with the last 2 pieces of the 
+assignment (most popular items and most profitable items) where I had to create a duplicate df in order to get the correct values as the formatting
+statement: map("${:,.2f}".format) was causing problems.
 
-(Practice using .mean(), .sum(), .count() to return useful values in a short df)
-Purchasing Analysis (Total)
+	It does feel good to have struggled with this assignment so much but to have finished with all my dataframes and summary tables looking
+exactly the way that they should according to the file on gitlab. I definitely wonder where my code could've been more efficient but ultimately 
+I feel pretty good about the work I am submitting. 
 
-	Number of Unique Items
-	Average Purchase Price
-	Total Number of Purchases
-	Total Revenue
-
-(Practice formatting and combining certain functions to return a small df with the total number of male/female/other
- players and their respective percentage representation in the game)
-Gender Demographics
-
-	Percentage and Count of Male Players
-	Percentage and Count of Female Players
-	Percentage and Count of Other / Non-Disclosed
-
-Purchasing Analysis (Gender)
-
-	The below each broken by gender
-
-	Purchase Count
-	Average Purchase Price
-	Total Purchase Value
-	Average Purchase Total per Person by Gender
-
-Age Demographics
-
-	The below each broken into bins of 4 years (i.e. <10, 10-14, 15-19, etc.)
-
-	Purchase Count
-	Average Purchase Price
-	Total Purchase Value
-	Average Purchase Total per Person by Age Group
-
- Purchasing Analysis (Age)
- 
-	Bin the purchase_data data frame by age
-	Run basic calculations to obtain purchase count, avg. purchase price, avg. purchase total per person etc. in the table below
-	Create a summary data frame to hold the results
-	Optional: give the displayed data cleaner formatting
-	Display the summary data frame
-
-Top Spenders
-
-Identify the the top 5 spenders in the game by total purchase value, then list (in a table):
-
-	SN
-	Purchase Count
-	Average Purchase Price
-	Total Purchase Value
-
-Most Popular Items
-
-	Identify the 5 most popular items by purchase count, then list (in a table):
-
-	Item ID
-	Item Name
-	Purchase Count
-	Item Price
-	Total Purchase Value
-
-Most Profitable Items
-
-	Identify the 5 most profitable items by total purchase value, then list (in a table):
-
-	Item ID
-	Item Name
-	Purchase Count
-	Item Price
-	Total Purchase Value
+General Overview:
+1. convert csv file containing purchase data for players in the imaginary game: Heroes of Pymoli, to dataframe
+2. count the number of individual players
+3. create summary table showing the number of unique items, the average price of all items, the total number of purchases, and the total revenue.
+4. create summary table showing percentage & count of players organized by gender
+5. create summary table showing purchasing analysis organized by gender
+6. use bins to show the number of players organized by age
+7. use bins to show purchasing analysis organized by age
+8. use groupby to show who the top spending players are
+9. use groupby to show  the most popular items in the game
+10. use groupby to show the most profitable items in the game
